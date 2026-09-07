@@ -10,8 +10,8 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    color: #4B3F52;
-    background-color: #FAF7FC;
+    color: #403735;
+    background-color: #fffaf7;
     line-height: 1.5;
 }
 
@@ -37,8 +37,8 @@ img {
     align-items: center;
     justify-content: space-between;
 
-    background-color: #FAF7FC;
-    border-bottom: 1px solid #E7DDEB;
+    background-color: #fffaf7;
+    border-bottom: 1px solid #eaded8;
 }
 
 .logo {
@@ -54,10 +54,6 @@ nav {
 
 nav a {
     font-size: 14px;
-}
-
-nav a:hover {
-    color: #8E78A3;
 }
 
 
@@ -83,7 +79,7 @@ nav a:hover {
 }
 
 .inicio-texto > p:first-child {
-    color: #8E78A3;
+    color: #b78b83;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -99,7 +95,7 @@ nav a:hover {
 }
 
 .descripcion {
-    color: #756A7A;
+    color: #706563;
     font-size: 16px;
     margin-bottom: 25px;
 }
@@ -109,16 +105,12 @@ nav a:hover {
 
     padding: 11px 22px;
 
-    background-color: #4B3F52;
+    background-color: #403735;
     color: white;
 
     border-radius: 22px;
 
     font-size: 14px;
-}
-
-.boton:hover {
-    background-color: #8E78A3;
 }
 
 
@@ -144,7 +136,7 @@ nav a:hover {
 .menu {
     padding: 60px 8%;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 .menu h2,
@@ -157,7 +149,7 @@ nav a:hover {
 }
 
 .menu > p {
-    color: #756A7A;
+    color: #706563;
     font-size: 14px;
     margin-bottom: 30px;
 }
@@ -172,9 +164,9 @@ nav a:hover {
 .producto {
     width: 260px;
 
-    background-color: #FAF7FC;
+    background-color: #fffaf7;
 
-    border: 1px solid #E7DDEB;
+    border: 1px solid #eaded8;
     border-radius: 8px;
 
     overflow: hidden;
@@ -193,14 +185,14 @@ nav a:hover {
 }
 
 .producto p {
-    color: #756A7A;
+    color: #706563;
     font-size: 13px;
     padding: 0 12px;
     margin: 5px 0;
 }
 
 .producto strong {
-    color: #8E78A3;
+    color: #b78b83;
     font-size: 14px;
 }
 
@@ -216,7 +208,7 @@ nav a:hover {
     max-width: 650px;
     margin: auto;
 
-    color: #756A7A;
+    color: #706563;
     font-size: 16px;
 }
 
@@ -227,11 +219,11 @@ nav a:hover {
     padding: 60px 8%;
     text-align: center;
 
-    background-color: #F1EAF5;
+    background-color: #f5eae5;
 }
 
 .contacto > p {
-    color: #756A7A;
+    color: #706563;
     margin-bottom: 25px;
 }
 
@@ -247,10 +239,6 @@ nav a:hover {
     gap: 8px;
 }
 
-.redes a:hover {
-    color: #8E78A3;
-}
-
 .redes img {
     width: 22px;
     height: 22px;
@@ -264,7 +252,7 @@ footer {
 
     text-align: center;
 
-    background-color: #4B3F52;
+    background-color: #403735;
     color: white;
 }
 
@@ -279,7 +267,7 @@ footer p {
 }
 
 footer small {
-    color: #D8C9E3;
+    color: #d8ccc8;
 }
 
 
@@ -358,8 +346,6 @@ footer small {
         gap: 15px;
     }
 }
-
-
 /* AJUSTE FINAL PARA LAPTOP */
 
 @media (min-width: 769px) {
