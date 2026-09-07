@@ -346,3 +346,43 @@ footer small {
         gap: 15px;
     }
 }
+/* AJUSTE FINAL PARA LAPTOP */
+
+@media (min-width: 769px) {
+
+    .inicio {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        max-width: 1200px !important;
+        min-height: 430px !important;
+        padding: 50px 40px !important;
+    }
+
+    .inicio-texto {
+        width: 50% !important;
+        max-width: 520px !important;
+    }
+
+    .inicio-imagen {
+        display: block !important;
+        width: 420px !important;
+        max-width: 420px !important;
+        flex-shrink: 0 !important;
+    }
+
+    .inicio-imagen img {
+        display: block !important;
+        width: 420px !important;
+        max-width: 420px !important;
+        height: 280px !important;
+        max-height: 280px !important;
+        object-fit: cover !important;
+    }
+
+    .inicio h1 {
+        font-size: 42px !important;
+    }
+
+}
