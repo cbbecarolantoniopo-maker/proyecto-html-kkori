@@ -1,3 +1,7 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +30,9 @@ img {
 }
 
 
-/* ENCABEZADO */
+/* =========================
+   ENCABEZADO
+========================= */
 
 .header {
     width: 100%;
@@ -41,27 +47,29 @@ img {
     border-bottom: 1px solid #E7DDEB;
 }
 
-.logo {
+.header__logo {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 4px;
 }
 
-nav {
+.header__nav {
     display: flex;
     gap: 25px;
 }
 
-nav a {
+.header__link {
     font-size: 14px;
 }
 
-nav a:hover {
+.header__link:hover {
     color: #8E78A3;
 }
 
 
-/* INICIO */
+/* =========================
+   INICIO
+========================= */
 
 .inicio {
     width: 100%;
@@ -78,31 +86,43 @@ nav a:hover {
     gap: 50px;
 }
 
-.inicio-texto {
+.inicio__contenido {
     width: 50%;
+    max-width: 520px;
 }
 
-.inicio-texto > p:first-child {
+.inicio__categoria {
     color: #8E78A3;
+
     font-size: 12px;
     font-weight: bold;
+
     letter-spacing: 2px;
+
     margin-bottom: 15px;
 }
 
-.inicio h1 {
+.inicio__titulo {
     font-family: Georgia, serif;
+
     font-size: 42px;
     font-weight: normal;
+
     line-height: 1.15;
+
     margin-bottom: 18px;
 }
 
-.descripcion {
+.inicio__descripcion {
     color: #756A7A;
+
     font-size: 16px;
+
     margin-bottom: 25px;
 }
+
+
+/* BOTÓN */
 
 .boton {
     display: inline-block;
@@ -110,7 +130,7 @@ nav a:hover {
     padding: 11px 22px;
 
     background-color: #4B3F52;
-    color: white;
+    color: #FFFFFF;
 
     border-radius: 22px;
 
@@ -122,16 +142,21 @@ nav a:hover {
 }
 
 
-/* IMAGEN PRINCIPAL */
+/* IMAGEN DE INICIO */
 
-.inicio-imagen {
+.inicio__imagen {
     width: 420px;
+    max-width: 420px;
+
     flex-shrink: 0;
 }
 
-.inicio-imagen img {
+.inicio__imagen img {
     width: 420px;
+    max-width: 420px;
+
     height: 280px;
+    max-height: 280px;
 
     object-fit: cover;
 
@@ -139,33 +164,50 @@ nav a:hover {
 }
 
 
-/* MENÚ */
+/* =========================
+   MENÚ
+========================= */
 
 .menu {
     padding: 60px 8%;
+
     text-align: center;
+
     background-color: #FFFFFF;
 }
 
-.menu h2,
-.nosotros h2,
-.contacto h2 {
+.menu__titulo,
+.nosotros__titulo,
+.multimedia__titulo,
+.contacto__titulo {
     font-family: Georgia, serif;
+
     font-size: 34px;
     font-weight: normal;
+
+    color: #4B3F52;
+
     margin-bottom: 10px;
 }
 
-.menu > p {
+.menu__descripcion {
     color: #756A7A;
+
     font-size: 14px;
+
     margin-bottom: 30px;
 }
 
-.productos {
+
+/* PRODUCTOS */
+
+.menu__productos {
     display: flex;
+
     justify-content: center;
+
     gap: 25px;
+
     flex-wrap: wrap;
 }
 
@@ -175,131 +217,241 @@ nav a:hover {
     background-color: #FAF7FC;
 
     border: 1px solid #E7DDEB;
+
     border-radius: 8px;
 
     overflow: hidden;
 }
 
-.producto img {
+.producto__imagen {
     width: 260px;
     height: 160px;
 
     object-fit: cover;
 }
 
-.producto h3 {
+.producto__contenido {
+    padding-bottom: 18px;
+}
+
+.producto__titulo {
     font-size: 18px;
+
+    color: #4B3F52;
+
     margin-top: 14px;
 }
 
-.producto p {
+.producto__descripcion {
     color: #756A7A;
+
     font-size: 13px;
+
     padding: 0 12px;
+
     margin: 5px 0;
 }
 
-.producto strong {
+.producto__precio {
     color: #8E78A3;
+
     font-size: 14px;
 }
 
 
-/* NOSOTROS */
+/* =========================
+   NOSOTROS
+========================= */
 
 .nosotros {
     padding: 60px 20%;
+
     text-align: center;
+
+    background-color: #FAF7FC;
 }
 
-.nosotros p {
+.nosotros__texto {
     max-width: 650px;
+
     margin: auto;
 
     color: #756A7A;
+
     font-size: 16px;
 }
 
 
-/* CONTACTO */
+/* =========================
+   MULTIMEDIA
+========================= */
+
+.multimedia {
+    padding: 60px 8%;
+
+    text-align: center;
+
+    background-color: #FFFFFF;
+}
+
+.multimedia__texto {
+    color: #756A7A;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+/* VIDEO */
+
+.multimedia__video {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+}
+
+.multimedia__video video {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+
+    height: 390px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+/* AUDIO */
+
+.multimedia__audio {
+    max-width: 500px;
+
+    margin: 0 auto;
+}
+
+.multimedia__subtitulo {
+    color: #4B3F52;
+
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+.multimedia__audio audio {
+    width: 100%;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
 
 .contacto {
     padding: 60px 8%;
+
     text-align: center;
 
     background-color: #F1EAF5;
 }
 
-.contacto > p {
+.contacto__texto {
     color: #756A7A;
+
     margin-bottom: 25px;
 }
 
-.redes {
+.contacto__redes {
     display: flex;
+
     justify-content: center;
+
     gap: 30px;
 }
 
-.redes a {
+.contacto__red {
     display: flex;
+
     align-items: center;
+
     gap: 8px;
+
+    color: #4B3F52;
 }
 
-.redes a:hover {
+.contacto__red:hover {
     color: #8E78A3;
 }
 
-.redes img {
+.contacto__red img {
     width: 22px;
     height: 22px;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
-footer {
+.footer {
     padding: 28px;
 
     text-align: center;
 
     background-color: #4B3F52;
-    color: white;
+
+    color: #FFFFFF;
 }
 
-footer strong {
+.footer__logo {
     font-size: 20px;
+
     letter-spacing: 3px;
 }
 
-footer p {
+.footer__texto {
     font-size: 13px;
+
     margin: 5px 0;
 }
 
-footer small {
+.footer__copyright {
     color: #D8C9E3;
+
+    font-size: 11px;
 }
 
 
-/* CELULAR */
+/* =========================
+   CELULAR
+========================= */
 
 @media (max-width: 768px) {
 
     .header {
         height: auto;
+
         padding: 18px 20px;
 
         flex-direction: column;
+
         gap: 15px;
     }
 
-    nav {
+    .header__nav {
         gap: 18px;
+
         flex-wrap: wrap;
+
         justify-content: center;
     }
+
+
+    /* INICIO */
 
     .inicio {
         min-height: auto;
@@ -307,29 +459,37 @@ footer small {
         padding: 45px 20px;
 
         flex-direction: column;
+
         align-items: flex-start;
 
         gap: 30px;
     }
 
-    .inicio-texto {
+    .inicio__contenido {
         width: 100%;
+        max-width: none;
     }
 
-    .inicio h1 {
+    .inicio__titulo {
         font-size: 36px;
     }
 
-    .inicio-imagen {
+    .inicio__imagen {
         width: 100%;
         max-width: 420px;
+
         align-self: center;
     }
 
-    .inicio-imagen img {
+    .inicio__imagen img {
         width: 100%;
+
         height: 250px;
+        max-height: 250px;
     }
+
+
+    /* MENÚ */
 
     .menu {
         padding: 55px 20px;
@@ -340,63 +500,46 @@ footer small {
         max-width: 300px;
     }
 
-    .producto img {
+    .producto__imagen {
         width: 100%;
     }
+
+
+    /* NOSOTROS */
 
     .nosotros {
         padding: 55px 20px;
     }
 
+
+    /* MULTIMEDIA */
+
+    .multimedia {
+        padding: 55px 20px;
+    }
+
+    .multimedia__video {
+        width: 100%;
+    }
+
+    .multimedia__video video {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    /* CONTACTO */
+
     .contacto {
         padding: 55px 20px;
     }
 
-    .redes {
+    .contacto__redes {
         flex-direction: column;
+
         align-items: center;
+
         gap: 15px;
-    }
-}
-
-
-/* AJUSTE FINAL PARA LAPTOP */
-
-@media (min-width: 769px) {
-
-    .inicio {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        max-width: 1200px !important;
-        min-height: 430px !important;
-        padding: 50px 40px !important;
-    }
-
-    .inicio-texto {
-        width: 50% !important;
-        max-width: 520px !important;
-    }
-
-    .inicio-imagen {
-        display: block !important;
-        width: 420px !important;
-        max-width: 420px !important;
-        flex-shrink: 0 !important;
-    }
-
-    .inicio-imagen img {
-        display: block !important;
-        width: 420px !important;
-        max-width: 420px !important;
-        height: 280px !important;
-        max-height: 280px !important;
-        object-fit: cover !important;
-    }
-
-    .inicio h1 {
-        font-size: 42px !important;
     }
 
 }
