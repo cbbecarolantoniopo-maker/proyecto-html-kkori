@@ -1,7 +1,3 @@
-/* =========================
-   CONFIGURACIÓN GENERAL
-========================= */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,15 +26,12 @@ img {
 }
 
 
-/* =========================
-   ENCABEZADO
-========================= */
+/* ENCABEZADO */
 
 .header {
     width: 100%;
-    min-height: 70px;
-
-    padding: 15px 7%;
+    height: 70px;
+    padding: 0 8%;
 
     display: flex;
     align-items: center;
@@ -56,32 +49,23 @@ img {
 
 nav {
     display: flex;
-    align-items: center;
-    gap: 28px;
+    gap: 25px;
 }
 
 nav a {
     font-size: 14px;
 }
 
-nav a:hover {
-    color: #b78b83;
-}
 
-
-/* =========================
-   INICIO
-========================= */
+/* INICIO */
 
 .inicio {
     width: 100%;
     max-width: 1200px;
-
-    min-height: 480px;
+    min-height: 430px;
 
     margin: 0 auto;
-
-    padding: 55px 7%;
+    padding: 50px 40px;
 
     display: flex;
     align-items: center;
@@ -91,46 +75,30 @@ nav a:hover {
 }
 
 .inicio-texto {
-    flex: 1;
-    max-width: 520px;
+    width: 50%;
 }
 
 .inicio-texto > p:first-child {
     color: #b78b83;
-
     font-size: 12px;
     font-weight: bold;
-
     letter-spacing: 2px;
-
     margin-bottom: 15px;
 }
 
 .inicio h1 {
     font-family: Georgia, serif;
-
     font-size: 42px;
     font-weight: normal;
-
     line-height: 1.15;
-
     margin-bottom: 18px;
 }
 
 .descripcion {
     color: #706563;
-
     font-size: 16px;
-
-    max-width: 450px;
-
     margin-bottom: 25px;
 }
-
-
-/* =========================
-   BOTÓN
-========================= */
 
 .boton {
     display: inline-block;
@@ -145,23 +113,16 @@ nav a:hover {
     font-size: 14px;
 }
 
-.boton:hover {
-    background-color: #b78b83;
-}
 
-
-/* =========================
-   IMAGEN PRINCIPAL
-========================= */
+/* IMAGEN PRINCIPAL */
 
 .inicio-imagen {
     width: 420px;
-
     flex-shrink: 0;
 }
 
 .inicio-imagen img {
-    width: 100%;
+    width: 420px;
     height: 280px;
 
     object-fit: cover;
@@ -170,17 +131,11 @@ nav a:hover {
 }
 
 
-/* =========================
-   MENÚ
-========================= */
+/* MENÚ */
 
 .menu {
-    width: 100%;
-
-    padding: 65px 7%;
-
+    padding: 60px 8%;
     text-align: center;
-
     background-color: white;
 }
 
@@ -188,36 +143,21 @@ nav a:hover {
 .nosotros h2,
 .contacto h2 {
     font-family: Georgia, serif;
-
     font-size: 34px;
     font-weight: normal;
-
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .menu > p {
     color: #706563;
-
     font-size: 14px;
-
     margin-bottom: 30px;
 }
 
-
-/* =========================
-   PRODUCTOS
-========================= */
-
 .productos {
-    max-width: 1000px;
-
-    margin: 0 auto;
-
     display: flex;
     justify-content: center;
-
     gap: 25px;
-
     flex-wrap: wrap;
 }
 
@@ -227,16 +167,13 @@ nav a:hover {
     background-color: #fffaf7;
 
     border: 1px solid #eaded8;
-
     border-radius: 8px;
 
     overflow: hidden;
-
-    padding-bottom: 18px;
 }
 
 .producto img {
-    width: 100%;
+    width: 260px;
     height: 160px;
 
     object-fit: cover;
@@ -244,62 +181,42 @@ nav a:hover {
 
 .producto h3 {
     font-size: 18px;
-
     margin-top: 14px;
 }
 
 .producto p {
     color: #706563;
-
     font-size: 13px;
-
     padding: 0 12px;
-
     margin: 5px 0;
 }
 
 .producto strong {
     color: #b78b83;
-
     font-size: 14px;
 }
 
 
-/* =========================
-   NOSOTROS
-========================= */
+/* NOSOTROS */
 
 .nosotros {
-    width: 100%;
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 65px 7%;
-
+    padding: 60px 20%;
     text-align: center;
 }
 
 .nosotros p {
     max-width: 650px;
-
-    margin: 0 auto;
+    margin: auto;
 
     color: #706563;
-
     font-size: 16px;
 }
 
 
-/* =========================
-   CONTACTO
-========================= */
+/* CONTACTO */
 
 .contacto {
-    width: 100%;
-
-    padding: 60px 7%;
-
+    padding: 60px 8%;
     text-align: center;
 
     background-color: #f5eae5;
@@ -307,37 +224,19 @@ nav a:hover {
 
 .contacto > p {
     color: #706563;
-
-    font-size: 15px;
-
     margin-bottom: 25px;
 }
 
-
-/* =========================
-   REDES SOCIALES
-========================= */
-
 .redes {
     display: flex;
-
     justify-content: center;
-    align-items: center;
-
     gap: 30px;
 }
 
 .redes a {
     display: flex;
     align-items: center;
-
     gap: 8px;
-
-    font-size: 14px;
-}
-
-.redes a:hover {
-    color: #b78b83;
 }
 
 .redes img {
@@ -346,9 +245,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   PIE DE PÁGINA
-========================= */
+/* FOOTER */
 
 footer {
     padding: 28px;
@@ -361,81 +258,43 @@ footer {
 
 footer strong {
     font-size: 20px;
-
     letter-spacing: 3px;
 }
 
 footer p {
     font-size: 13px;
-
     margin: 5px 0;
 }
 
 footer small {
     color: #d8ccc8;
-
-    font-size: 11px;
 }
 
 
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-
-    .inicio {
-        gap: 30px;
-    }
-
-    .inicio-imagen {
-        width: 360px;
-    }
-
-    .inicio-imagen img {
-        height: 250px;
-    }
-
-    .inicio h1 {
-        font-size: 36px;
-    }
-}
-
-
-/* =========================
-   CELULAR
-========================= */
+/* CELULAR */
 
 @media (max-width: 768px) {
 
     .header {
+        height: auto;
         padding: 18px 20px;
 
         flex-direction: column;
-
         gap: 15px;
     }
 
     nav {
         gap: 18px;
-
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
-
-    /* INICIO */
-
     .inicio {
-        width: 100%;
-
         min-height: auto;
 
         padding: 45px 20px;
 
         flex-direction: column;
-
         align-items: flex-start;
 
         gap: 30px;
@@ -443,7 +302,6 @@ footer small {
 
     .inicio-texto {
         width: 100%;
-        max-width: none;
     }
 
     .inicio h1 {
@@ -452,9 +310,7 @@ footer small {
 
     .inicio-imagen {
         width: 100%;
-
         max-width: 420px;
-
         align-self: center;
     }
 
@@ -463,15 +319,8 @@ footer small {
         height: 250px;
     }
 
-
-    /* MENÚ */
-
     .menu {
         padding: 55px 20px;
-    }
-
-    .productos {
-        width: 100%;
     }
 
     .producto {
@@ -479,66 +328,21 @@ footer small {
         max-width: 300px;
     }
 
-
-    /* NOSOTROS */
+    .producto img {
+        width: 100%;
+    }
 
     .nosotros {
         padding: 55px 20px;
     }
 
-
-    /* CONTACTO */
-
     .contacto {
         padding: 55px 20px;
     }
 
-
-    /* REDES */
-
     .redes {
         flex-direction: column;
-
+        align-items: center;
         gap: 15px;
     }
-
-}
-
-
-/* =========================
-   CELULARES PEQUEÑOS
-========================= */
-
-@media (max-width: 480px) {
-
-    .logo {
-        font-size: 22px;
-    }
-
-    nav {
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 13px;
-    }
-
-    .inicio {
-        padding: 40px 18px;
-    }
-
-    .inicio h1 {
-        font-size: 32px;
-    }
-
-    .inicio-imagen img {
-        height: 220px;
-    }
-
-    .menu h2,
-    .nosotros h2,
-    .contacto h2 {
-        font-size: 30px;
-    }
-
 }
