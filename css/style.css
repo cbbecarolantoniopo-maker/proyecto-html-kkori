@@ -1,5 +1,5 @@
 /* =========================
-   CONFIGURACIÓN GENERAL
+   GENERAL
 ========================= */
 
 * {
@@ -15,8 +15,8 @@ html {
 body {
     font-family: Arial, sans-serif;
     color: #403735;
-    background-color: #fffaf7;
-    line-height: 1.6;
+    background: #fffaf7;
+    line-height: 1.5;
 }
 
 a {
@@ -35,14 +35,14 @@ img {
 ========================= */
 
 .header {
-    height: 75px;
+    min-height: 70px;
+    padding: 15px 7%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 8%;
-
-    background-color: #fffaf7;
+    background: #fffaf7;
     border-bottom: 1px solid #eaded8;
 }
 
@@ -52,16 +52,16 @@ img {
     letter-spacing: 4px;
 }
 
-.nav {
+nav {
     display: flex;
-    gap: 30px;
+    gap: 28px;
 }
 
-.nav a {
+nav a {
     font-size: 15px;
 }
 
-.nav a:hover {
+nav a:hover {
     color: #b78b83;
 }
 
@@ -70,74 +70,86 @@ img {
    INICIO
 ========================= */
 
-.hero {
-    min-height: 550px;
+.inicio {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 480px;
+
+    padding: 55px 7%;
 
     display: flex;
     align-items: center;
-
-    gap: 60px;
-
-    padding: 60px 8%;
+    gap: 50px;
 }
 
-.hero-content {
-    width: 55%;
+.inicio-texto {
+    flex: 1;
 }
 
-.eyebrow {
+.inicio-texto > p:first-child {
     color: #b78b83;
+
     font-size: 12px;
     font-weight: bold;
+
     letter-spacing: 2px;
+
     margin-bottom: 15px;
 }
 
-.hero h1 {
+.inicio h1 {
     font-family: Georgia, serif;
-    font-size: 48px;
-    font-weight: normal;
-    line-height: 1.1;
 
-    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: normal;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
 }
 
-.hero-content > p:not(.eyebrow) {
-    color: #706563;
-    font-size: 17px;
-
+.descripcion {
     max-width: 480px;
+
+    color: #706563;
+
+    font-size: 16px;
 
     margin-bottom: 25px;
 }
 
-.button {
+
+/* BOTÓN */
+
+.boton {
     display: inline-block;
 
-    background-color: #403735;
+    background: #403735;
     color: white;
 
-    padding: 12px 24px;
+    padding: 11px 22px;
 
-    border-radius: 25px;
+    border-radius: 22px;
 
     font-size: 14px;
 }
 
-.button:hover {
-    background-color: #b78b83;
+.boton:hover {
+    background: #b78b83;
 }
 
 
 /* IMAGEN PRINCIPAL */
 
-.hero-image {
-    width: 40%;
+.inicio-imagen {
+    width: 420px;
+    flex-shrink: 0;
 }
 
-.hero-image img {
+.inicio-imagen img {
     width: 100%;
-    height: 300px;
+    height: 280px;
 
     object-fit: cover;
 
@@ -150,16 +162,19 @@ img {
 ========================= */
 
 .menu {
-    padding: 70px 8%;
+    padding: 65px 7%;
 
     text-align: center;
 
-    background-color: white;
+    background: white;
 }
 
-.menu h2 {
+.menu h2,
+.nosotros h2,
+.contacto h2 {
     font-family: Georgia, serif;
-    font-size: 38px;
+
+    font-size: 34px;
     font-weight: normal;
 
     margin-bottom: 8px;
@@ -168,15 +183,17 @@ img {
 .menu > p {
     color: #706563;
 
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 
 /* PRODUCTOS */
 
 .productos {
-    display: flex;
+    max-width: 1000px;
+    margin: auto;
 
+    display: flex;
     justify-content: center;
 
     gap: 25px;
@@ -185,9 +202,9 @@ img {
 }
 
 .producto {
-    width: 270px;
+    width: 260px;
 
-    background-color: #fffaf7;
+    background: #fffaf7;
 
     border: 1px solid #eaded8;
 
@@ -195,20 +212,20 @@ img {
 
     overflow: hidden;
 
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 }
 
 .producto img {
     width: 100%;
-    height: 170px;
+    height: 160px;
 
     object-fit: cover;
 }
 
 .producto h3 {
-    font-size: 19px;
+    font-size: 18px;
 
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .producto p {
@@ -216,7 +233,7 @@ img {
 
     font-size: 14px;
 
-    padding: 0 15px;
+    padding: 0 12px;
 
     margin: 5px 0;
 }
@@ -233,19 +250,13 @@ img {
 ========================= */
 
 .nosotros {
-    padding: 75px 15%;
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 65px 7%;
 
     text-align: center;
-}
-
-.nosotros h2 {
-    font-family: Georgia, serif;
-
-    font-size: 38px;
-
-    font-weight: normal;
-
-    margin-bottom: 15px;
 }
 
 .nosotros p {
@@ -264,21 +275,11 @@ img {
 ========================= */
 
 .contacto {
-    padding: 70px 8%;
+    padding: 60px 7%;
 
     text-align: center;
 
-    background-color: #f5eae5;
-}
-
-.contacto h2 {
-    font-family: Georgia, serif;
-
-    font-size: 38px;
-
-    font-weight: normal;
-
-    margin-bottom: 10px;
+    background: #f5eae5;
 }
 
 .contacto > p {
@@ -319,56 +320,49 @@ img {
 
 
 /* =========================
-   PIE DE PÁGINA
+   FOOTER
 ========================= */
 
 footer {
+    padding: 28px;
+
     text-align: center;
 
-    padding: 30px;
-
-    background-color: #403735;
-
+    background: #403735;
     color: white;
 }
 
 footer strong {
     font-size: 20px;
-
     letter-spacing: 3px;
 }
 
 footer p {
     font-size: 14px;
-
     margin: 5px 0;
 }
 
 footer small {
     color: #d8ccc8;
-
     font-size: 12px;
 }
 
 
 /* =========================
-   RESPONSIVE
    CELULAR
 ========================= */
 
 @media (max-width: 768px) {
 
     .header {
-        height: auto;
-
-        padding: 20px;
+        padding: 18px 20px;
 
         flex-direction: column;
 
         gap: 15px;
     }
 
-    .nav {
+    nav {
         gap: 18px;
 
         flex-wrap: wrap;
@@ -377,57 +371,49 @@ footer small {
     }
 
 
-    /* INICIO */
+    .inicio {
+        padding: 45px 20px;
 
-    .hero {
         flex-direction: column;
 
-        padding: 50px 20px;
-
-        gap: 35px;
+        gap: 30px;
     }
 
-    .hero-content {
+    .inicio-texto {
         width: 100%;
     }
 
-    .hero-image {
+    .inicio-imagen {
         width: 100%;
+        max-width: 420px;
     }
 
-    .hero-image img {
+    .inicio-imagen img {
         height: 250px;
     }
 
-    .hero h1 {
-        font-size: 40px;
+    .inicio h1 {
+        font-size: 36px;
     }
 
 
-    /* MENÚ */
-
     .menu {
-        padding: 60px 20px;
+        padding: 55px 20px;
     }
 
     .producto {
         width: 100%;
-
         max-width: 300px;
     }
 
 
-    /* NOSOTROS */
-
     .nosotros {
-        padding: 60px 20px;
+        padding: 55px 20px;
     }
 
 
-    /* CONTACTO */
-
     .contacto {
-        padding: 60px 20px;
+        padding: 55px 20px;
     }
 
 }
