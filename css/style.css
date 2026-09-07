@@ -386,3 +386,105 @@ footer small {
     }
 
 }
+/* =========================
+   CAMBIO DE PALETA A MORADO
+========================= */
+
+body {
+    background-color: #FAF7FC !important;
+    color: #4B3F52 !important;
+}
+
+.header {
+    background-color: #FAF7FC !important;
+    border-bottom-color: #DCCDE5 !important;
+}
+
+nav a:hover {
+    color: #8E78A3 !important;
+}
+
+.inicio-texto > p:first-child {
+    color: #8E78A3 !important;
+}
+
+.inicio h1 {
+    color: #4B3F52 !important;
+}
+
+.descripcion {
+    color: #756A7A !important;
+}
+
+.boton {
+    background-color: #4B3F52 !important;
+    color: #FFFFFF !important;
+}
+
+.boton:hover {
+    background-color: #8E78A3 !important;
+}
+
+.menu {
+    background-color: #FFFFFF !important;
+}
+
+.menu h2,
+.nosotros h2,
+.contacto h2 {
+    color: #4B3F52 !important;
+}
+
+.menu > p {
+    color: #756A7A !important;
+}
+
+.producto {
+    background-color: #FAF7FC !important;
+    border-color: #DCCDE5 !important;
+}
+
+.producto h3 {
+    color: #4B3F52 !important;
+}
+
+.producto p {
+    color: #756A7A !important;
+}
+
+.producto strong {
+    color: #8E78A3 !important;
+}
+
+.nosotros {
+    background-color: #FAF7FC !important;
+}
+
+.nosotros p {
+    color: #756A7A !important;
+}
+
+.contacto {
+    background-color: #F0E7F5 !important;
+}
+
+.contacto > p {
+    color: #756A7A !important;
+}
+
+.redes a {
+    color: #4B3F52 !important;
+}
+
+.redes a:hover {
+    color: #8E78A3 !important;
+}
+
+footer {
+    background-color: #4B3F52 !important;
+    color: #FFFFFF !important;
+}
+
+footer small {
+    color: #D8C9E3 !important;
+}
