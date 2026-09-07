@@ -12,152 +12,333 @@
 
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
     <header class="header">
 
-        <a href="#inicio" class="logo">KKORI</a>
+        <a href="#inicio" class="header__logo">
+            KKORI
+        </a>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#menu">Menú</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
+        <nav class="header__nav">
+
+            <a href="#inicio" class="header__link">
+                Inicio
+            </a>
+
+            <a href="#menu" class="header__link">
+                Menú
+            </a>
+
+            <a href="#nosotros" class="header__link">
+                Nosotros
+            </a>
+
+            <a href="#multimedia" class="header__link">
+                Experiencia
+            </a>
+
+            <a href="#contacto" class="header__link">
+                Contacto
+            </a>
+
         </nav>
 
     </header>
 
 
-    <!-- INICIO -->
-    <section id="inicio" class="inicio">
+    <main>
 
-        <div class="inicio-texto">
+        <!-- =========================
+             INICIO
+        ========================== -->
 
-            <p>KOREAN BAKERY & SPECIALTY COFFEE</p>
+        <section id="inicio" class="inicio">
 
-            <h1>
-                Un pequeño rincón de Corea para disfrutar.
-            </h1>
+            <div class="inicio__contenido">
 
-            <p class="descripcion">
-                Café, matcha, bebidas y repostería inspirada en Asia,
-                preparados con cariño.
+                <p class="inicio__categoria">
+                    KOREAN BAKERY & SPECIALTY COFFEE
+                </p>
+
+                <h1 class="inicio__titulo">
+                    Un pequeño rincón de Corea para disfrutar.
+                </h1>
+
+                <p class="inicio__descripcion">
+                    Café, matcha, bebidas y repostería inspirada en Asia,
+                    preparados con cariño.
+                </p>
+
+                <a href="#menu" class="boton">
+                    Ver menú
+                </a>
+
+            </div>
+
+
+            <div class="inicio__imagen">
+
+                <img
+                    src="img/local.jpg"
+                    alt="Interior de KKORI"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MENÚ
+        ========================== -->
+
+        <section id="menu" class="menu">
+
+            <h2 class="menu__titulo">
+                Nuestro menú
+            </h2>
+
+            <p class="menu__descripcion">
+                Algunas de nuestras opciones favoritas.
             </p>
 
-            <a href="#menu" class="boton">
-                Ver menú
-            </a>
 
-        </div>
-
-        <div class="inicio-imagen">
-            <img src="img/local.jpg" alt="Interior de KKORI">
-        </div>
-
-    </section>
+            <div class="menu__productos">
 
 
-    <!-- MENÚ -->
-    <section id="menu" class="menu">
+                <!-- PRODUCTO 1 -->
 
-        <h2>Nuestro menú</h2>
+                <article class="producto">
 
-        <p>Algunas de nuestras opciones favoritas.</p>
+                    <img
+                        class="producto__imagen"
+                        src="img/producto1.jpg"
+                        alt="Matcha Latte"
+                    >
 
-        <div class="productos">
+                    <div class="producto__contenido">
 
-            <div class="producto">
+                        <h3 class="producto__titulo">
+                            Matcha Latte
+                        </h3>
 
-                <img src="img/producto1.jpg" alt="Matcha Latte">
+                        <p class="producto__descripcion">
+                            Matcha suave y cremoso.
+                        </p>
 
-                <h3>Matcha Latte</h3>
+                        <strong class="producto__precio">
+                            Bs. 28
+                        </strong>
 
-                <p>Matcha suave y cremoso.</p>
+                    </div>
 
-                <strong>Bs. 28</strong>
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article class="producto">
+
+                    <img
+                        class="producto__imagen"
+                        src="img/producto2.jpg"
+                        alt="Mini Cake"
+                    >
+
+                    <div class="producto__contenido">
+
+                        <h3 class="producto__titulo">
+                            Mini Cake
+                        </h3>
+
+                        <p class="producto__descripcion">
+                            Delicada y perfecta para compartir.
+                        </p>
+
+                        <strong class="producto__precio">
+                            Bs. 45
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article class="producto">
+
+                    <img
+                        class="producto__imagen"
+                        src="img/logo.jpg"
+                        alt="Specialty Coffee"
+                    >
+
+                    <div class="producto__contenido">
+
+                        <h3 class="producto__titulo">
+                            Specialty Coffee
+                        </h3>
+
+                        <p class="producto__descripcion">
+                            Café preparado con atención.
+                        </p>
+
+                        <strong class="producto__precio">
+                            Bs. 22
+                        </strong>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section id="nosotros" class="nosotros">
+
+            <h2 class="nosotros__titulo">
+                Sobre KKORI
+            </h2>
+
+            <p class="nosotros__texto">
+                KKORI es un espacio inspirado en la cultura asiática,
+                donde puedes disfrutar de café, bebidas y repostería
+                en un ambiente acogedor y especial.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             MULTIMEDIA
+        ========================== -->
+
+        <section id="multimedia" class="multimedia">
+
+            <h2 class="multimedia__titulo">
+                Vive la experiencia KKORI
+            </h2>
+
+            <p class="multimedia__texto">
+                Conoce un poco más de nuestro espacio y nuestra esencia.
+            </p>
+
+
+            <!-- VIDEO -->
+
+            <div class="multimedia__video">
+
+                <video controls>
+
+                    <source
+                        src="video.mp4"
+                        type="video/mp4"
+                    >
+
+                    Tu navegador no puede reproducir este video.
+
+                </video>
 
             </div>
 
 
-            <div class="producto">
+            <!-- AUDIO -->
 
-                <img src="img/producto2.jpg" alt="Mini Cake">
+            <div class="multimedia__audio">
 
-                <h3>Mini Cake</h3>
+                <h3 class="multimedia__subtitulo">
+                    Sonido de KKORI
+                </h3>
 
-                <p>Delicada y perfecta para compartir.</p>
+                <audio controls>
 
-                <strong>Bs. 45</strong>
+                    <source
+                        src="audio.mp3"
+                        type="audio/mpeg"
+                    >
 
-            </div>
+                    Tu navegador no puede reproducir este audio.
 
-
-            <div class="producto">
-
-                <img src="img/logo.jpg" alt="Specialty Coffee">
-
-                <h3>Specialty Coffee</h3>
-
-                <p>Café preparado con atención.</p>
-
-                <strong>Bs. 22</strong>
+                </audio>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="nosotros">
+        <!-- =========================
+             CONTACTO
+        ========================== -->
 
-        <h2>Sobre KKORI</h2>
+        <section id="contacto" class="contacto">
 
-        <p>
-            KKORI es un espacio inspirado en la cultura asiática,
-            donde puedes disfrutar de café, bebidas y repostería
-            en un ambiente acogedor y especial.
-        </p>
+            <h2 class="contacto__titulo">
+                Encuéntranos
+            </h2>
 
-    </section>
-
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto">
-
-        <h2>Encuéntranos</h2>
-
-        <p>
-            Síguenos en nuestras redes sociales y conoce nuestras novedades.
-        </p>
-
-        <div class="redes">
-
-            <a href="#">
-                <img src="iconos/instagram.svg" alt="">
-                Instagram
-            </a>
-
-            <a href="#">
-                <img src="iconos/whatsapp.svg" alt="">
-                WhatsApp
-            </a>
-
-        </div>
-
-    </section>
+            <p class="contacto__texto">
+                Síguenos en nuestras redes sociales y conoce
+                nuestras novedades.
+            </p>
 
 
-    <!-- PIE -->
-    <footer>
+            <div class="contacto__redes">
 
-        <strong>KKORI</strong>
+                <a href="#" class="contacto__red">
 
-        <p>
+                    <img
+                        src="iconos/instagram.svg"
+                        alt=""
+                    >
+
+                    Instagram
+
+                </a>
+
+
+                <a href="#" class="contacto__red">
+
+                    <img
+                        src="iconos/whatsapp.svg"
+                        alt=""
+                    >
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+
+    <footer class="footer">
+
+        <strong class="footer__logo">
+            KKORI
+        </strong>
+
+        <p class="footer__texto">
             Korean Bakery & Specialty Coffee
         </p>
 
-        <small>
+        <small class="footer__copyright">
             © 2026 KKORI
         </small>
 
