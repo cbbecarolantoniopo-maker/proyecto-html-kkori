@@ -1,3 +1,7 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,284 +15,418 @@ html {
 body {
     font-family: Arial, sans-serif;
     color: #403735;
-    background: #fffaf7;
+    background-color: #fffaf7;
     line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-/* ENCABEZADO */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
 
 .header {
-    height: 80px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 7%;
+
+    padding: 0 8%;
+
+    background-color: #fffaf7;
     border-bottom: 1px solid #eaded8;
-    background: #fffaf7;
 }
 
 .logo {
-    text-decoration: none;
-    color: #403735;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: 4px;
 }
 
-nav {
+.nav {
     display: flex;
     gap: 30px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #403735;
-    font-size: 16px;
+.nav a {
+    font-size: 15px;
 }
 
-nav a:hover {
+.nav a:hover {
     color: #b78b83;
 }
 
 
-/* INICIO */
+/* =========================
+   INICIO
+========================= */
 
-.inicio {
-    min-height: 600px;
+.hero {
+    min-height: 550px;
+
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 70px 7%;
+
+    gap: 60px;
+
+    padding: 60px 8%;
 }
 
-.inicio-texto {
-    width: 50%;
+.hero-content {
+    width: 55%;
 }
 
-.inicio-texto > p:first-child {
-    color: #c7968d;
-    font-size: 13px;
+.eyebrow {
+    color: #b78b83;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1.1;
+
     margin-bottom: 20px;
 }
 
-h1 {
-    font-family: Georgia, serif;
-    font-size: 58px;
-    line-height: 1.05;
-    font-weight: normal;
+.hero-content > p:not(.eyebrow) {
+    color: #706563;
+    font-size: 17px;
+
+    max-width: 480px;
+
     margin-bottom: 25px;
 }
 
-.descripcion {
-    font-size: 18px;
-    color: #706563;
-    max-width: 500px;
-    margin-bottom: 30px;
-}
-
-.boton {
+.button {
     display: inline-block;
-    text-decoration: none;
-    background: #403735;
+
+    background-color: #403735;
     color: white;
-    padding: 13px 25px;
+
+    padding: 12px 24px;
+
     border-radius: 25px;
+
+    font-size: 14px;
 }
 
-.boton:hover {
-    background: #b78b83;
+.button:hover {
+    background-color: #b78b83;
 }
 
-.inicio-imagen {
-    width: 50%;
+
+/* IMAGEN PRINCIPAL */
+
+.hero-image {
+    width: 40%;
 }
 
-.inicio-imagen img {
+.hero-image img {
     width: 100%;
-    height: 430px;
+    height: 300px;
+
     object-fit: cover;
-    border-radius: 10px;
+
+    border-radius: 8px;
 }
 
 
-/* MENÚ */
+/* =========================
+   MENÚ
+========================= */
 
 .menu {
-    padding: 80px 7%;
+    padding: 70px 8%;
+
     text-align: center;
-    background: white;
+
+    background-color: white;
 }
 
-.menu h2,
-.nosotros h2,
-.contacto h2 {
+.menu h2 {
     font-family: Georgia, serif;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: normal;
-    margin-bottom: 10px;
+
+    margin-bottom: 8px;
 }
 
 .menu > p {
     color: #706563;
-    margin-bottom: 40px;
+
+    margin-bottom: 35px;
 }
+
+
+/* PRODUCTOS */
 
 .productos {
     display: flex;
+
     justify-content: center;
+
     gap: 25px;
+
+    flex-wrap: wrap;
 }
 
 .producto {
-    width: 30%;
-    padding-bottom: 25px;
+    width: 270px;
+
+    background-color: #fffaf7;
+
     border: 1px solid #eaded8;
-    border-radius: 10px;
+
+    border-radius: 8px;
+
     overflow: hidden;
-    background: #fffaf7;
+
+    padding-bottom: 20px;
 }
 
 .producto img {
     width: 100%;
-    height: 220px;
+    height: 170px;
+
     object-fit: cover;
 }
 
 .producto h3 {
-    margin-top: 20px;
-    font-size: 21px;
+    font-size: 19px;
+
+    margin-top: 15px;
 }
 
 .producto p {
     color: #706563;
-    padding: 5px 15px;
+
+    font-size: 14px;
+
+    padding: 0 15px;
+
+    margin: 5px 0;
 }
 
 .producto strong {
     color: #b78b83;
+
+    font-size: 15px;
 }
 
 
-/* NOSOTROS */
+/* =========================
+   NOSOTROS
+========================= */
 
 .nosotros {
-    padding: 80px 20%;
+    padding: 75px 15%;
+
     text-align: center;
+}
+
+.nosotros h2 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
 }
 
 .nosotros p {
-    max-width: 700px;
+    max-width: 650px;
+
     margin: auto;
+
     color: #706563;
-    font-size: 17px;
+
+    font-size: 16px;
 }
 
 
-/* CONTACTO */
+/* =========================
+   CONTACTO
+========================= */
 
 .contacto {
-    padding: 80px 7%;
+    padding: 70px 8%;
+
     text-align: center;
-    background: #f5eae5;
+
+    background-color: #f5eae5;
 }
 
-.contacto p {
+.contacto h2 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+.contacto > p {
     color: #706563;
+
     margin-bottom: 25px;
 }
 
+
+/* REDES */
+
 .redes {
     display: flex;
+
     justify-content: center;
+
     gap: 30px;
 }
 
 .redes a {
     display: flex;
+
     align-items: center;
+
     gap: 8px;
-    text-decoration: none;
-    color: #403735;
+
+    font-size: 15px;
+}
+
+.redes a:hover {
+    color: #b78b83;
 }
 
 .redes img {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
 }
 
 
-/* PIE DE PÁGINA */
+/* =========================
+   PIE DE PÁGINA
+========================= */
 
 footer {
     text-align: center;
-    padding: 35px;
-    background: #403735;
+
+    padding: 30px;
+
+    background-color: #403735;
+
     color: white;
 }
 
 footer strong {
-    font-size: 22px;
+    font-size: 20px;
+
     letter-spacing: 3px;
 }
 
 footer p {
+    font-size: 14px;
+
     margin: 5px 0;
 }
 
 footer small {
     color: #d8ccc8;
+
+    font-size: 12px;
 }
 
 
-/* CELULAR */
+/* =========================
+   RESPONSIVE
+   CELULAR
+========================= */
 
 @media (max-width: 768px) {
 
     .header {
         height: auto;
+
         padding: 20px;
+
         flex-direction: column;
+
         gap: 15px;
     }
 
-    nav {
-        gap: 15px;
+    .nav {
+        gap: 18px;
+
         flex-wrap: wrap;
+
         justify-content: center;
     }
 
-    .inicio {
+
+    /* INICIO */
+
+    .hero {
         flex-direction: column;
+
         padding: 50px 20px;
+
+        gap: 35px;
     }
 
-    .inicio-texto,
-    .inicio-imagen {
+    .hero-content {
         width: 100%;
     }
 
-    h1 {
-        font-size: 42px;
+    .hero-image {
+        width: 100%;
     }
 
-    .inicio-imagen img {
-        height: 300px;
+    .hero-image img {
+        height: 250px;
     }
 
-    .productos {
-        flex-direction: column;
-        align-items: center;
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    /* MENÚ */
+
+    .menu {
+        padding: 60px 20px;
     }
 
     .producto {
         width: 100%;
-        max-width: 400px;
+
+        max-width: 300px;
     }
 
+
+    /* NOSOTROS */
+
     .nosotros {
+        padding: 60px 20px;
+    }
+
+
+    /* CONTACTO */
+
+    .contacto {
         padding: 60px 20px;
     }
 
