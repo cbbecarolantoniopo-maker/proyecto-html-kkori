@@ -8,6 +8,3 @@ Proyecto web HTML/CSS para KKORI.
 - iconos/
 - img/
 - media/
-
-## Para GitHub Pages
-El archivo principal es `index.html`. Sube TODO el contenido manteniendo las carpetas.
